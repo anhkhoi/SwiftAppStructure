@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,9 @@
 		FAD3165C24BE18BF007466BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD3165A24BE18BF007466BE /* LaunchScreen.storyboard */; };
 		FAD3166724BE18BF007466BE /* SwiftAppStructureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3166624BE18BF007466BE /* SwiftAppStructureTests.swift */; };
 		FAD3167224BE18BF007466BE /* SwiftAppStructureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3167124BE18BF007466BE /* SwiftAppStructureUITests.swift */; };
+		FAD3168124BE18E8007466BE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FAD3168024BE18E8007466BE /* Alamofire */; };
+		FAD3168424BE1920007466BE /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = FAD3168324BE1920007466BE /* SwiftyBeaver */; };
+		FAD3168724BE1934007466BE /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = FAD3168624BE1934007466BE /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD3168724BE1934007466BE /* SwiftyJSON in Frameworks */,
+				FAD3168124BE18E8007466BE /* Alamofire in Frameworks */,
+				FAD3168424BE1920007466BE /* SwiftyBeaver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +153,11 @@
 			dependencies = (
 			);
 			name = SwiftAppStructure;
+			packageProductDependencies = (
+				FAD3168024BE18E8007466BE /* Alamofire */,
+				FAD3168324BE1920007466BE /* SwiftyBeaver */,
+				FAD3168624BE1934007466BE /* SwiftyJSON */,
+			);
 			productName = SwiftAppStructure;
 			productReference = FAD3164924BE18BD007466BE /* SwiftAppStructure.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +230,11 @@
 				Base,
 			);
 			mainGroup = FAD3164024BE18BD007466BE;
+			packageReferences = (
+				FAD3167F24BE18E8007466BE /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FAD3168224BE1920007466BE /* XCRemoteSwiftPackageReference "SwiftyBeaver" */,
+				FAD3168524BE1934007466BE /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = FAD3164A24BE18BD007466BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -588,6 +604,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FAD3167F24BE18E8007466BE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.1;
+			};
+		};
+		FAD3168224BE1920007466BE /* XCRemoteSwiftPackageReference "SwiftyBeaver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyBeaver/SwiftyBeaver";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.1;
+			};
+		};
+		FAD3168524BE1934007466BE /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FAD3168024BE18E8007466BE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAD3167F24BE18E8007466BE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		FAD3168324BE1920007466BE /* SwiftyBeaver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAD3168224BE1920007466BE /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
+			productName = SwiftyBeaver;
+		};
+		FAD3168624BE1934007466BE /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAD3168524BE1934007466BE /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FAD3165524BE18BD007466BE /* SwiftAppStructure.xcdatamodeld */ = {
