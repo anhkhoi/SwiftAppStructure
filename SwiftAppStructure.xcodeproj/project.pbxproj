@@ -19,6 +19,10 @@
 		FAD3168124BE18E8007466BE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FAD3168024BE18E8007466BE /* Alamofire */; };
 		FAD3168424BE1920007466BE /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = FAD3168324BE1920007466BE /* SwiftyBeaver */; };
 		FAD3168724BE1934007466BE /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = FAD3168624BE1934007466BE /* SwiftyJSON */; };
+		FAD3168B24BE1B80007466BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3168A24BE1B80007466BE /* LoginViewController.swift */; };
+		FAD3168D24BE1B92007466BE /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3168C24BE1B92007466BE /* LoginPresenter.swift */; };
+		FAD3169024BE1BA6007466BE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3168F24BE1BA6007466BE /* User.swift */; };
+		FAD3169324BE1BE9007466BE /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3169224BE1BE9007466BE /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,10 @@
 		FAD3166D24BE18BF007466BE /* SwiftAppStructureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftAppStructureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD3167124BE18BF007466BE /* SwiftAppStructureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAppStructureUITests.swift; sourceTree = "<group>"; };
 		FAD3167324BE18BF007466BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD3168A24BE1B80007466BE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FAD3168C24BE1B92007466BE /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		FAD3168F24BE1BA6007466BE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FAD3169224BE1BE9007466BE /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,9 @@
 		FAD3164B24BE18BD007466BE /* SwiftAppStructure */ = {
 			isa = PBXGroup;
 			children = (
+				FAD3169124BE1BDE007466BE /* Configs */,
+				FAD3168E24BE1B9D007466BE /* Models */,
+				FAD3168824BE1B5F007466BE /* Modules */,
 				FAD3164C24BE18BD007466BE /* AppDelegate.swift */,
 				FAD3164E24BE18BD007466BE /* SceneDelegate.swift */,
 				FAD3165024BE18BD007466BE /* ViewController.swift */,
@@ -135,6 +146,39 @@
 				FAD3167324BE18BF007466BE /* Info.plist */,
 			);
 			path = SwiftAppStructureUITests;
+			sourceTree = "<group>";
+		};
+		FAD3168824BE1B5F007466BE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FAD3168924BE1B68007466BE /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FAD3168924BE1B68007466BE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FAD3168A24BE1B80007466BE /* LoginViewController.swift */,
+				FAD3168C24BE1B92007466BE /* LoginPresenter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FAD3168E24BE1B9D007466BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAD3168F24BE1BA6007466BE /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAD3169124BE1BDE007466BE /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				FAD3169224BE1BE9007466BE /* Config.swift */,
+			);
+			path = Configs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,10 +322,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD3168D24BE1B92007466BE /* LoginPresenter.swift in Sources */,
 				FAD3165124BE18BD007466BE /* ViewController.swift in Sources */,
 				FAD3165724BE18BD007466BE /* SwiftAppStructure.xcdatamodeld in Sources */,
 				FAD3164D24BE18BD007466BE /* AppDelegate.swift in Sources */,
+				FAD3168B24BE1B80007466BE /* LoginViewController.swift in Sources */,
+				FAD3169324BE1BE9007466BE /* Config.swift in Sources */,
 				FAD3164F24BE18BD007466BE /* SceneDelegate.swift in Sources */,
+				FAD3169024BE1BA6007466BE /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +504,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftAppStructure/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +522,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftAppStructure/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
