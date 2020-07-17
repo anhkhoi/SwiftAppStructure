@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA24034024C19BFC00C4A40C /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24033F24C19BFC00C4A40C /* ForgotPasswordViewController.swift */; };
+		FA24034224C19D6000C4A40C /* ForgotPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24034124C19D6000C4A40C /* ForgotPasswordPresenter.swift */; };
 		FAD3164D24BE18BD007466BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3164C24BE18BD007466BE /* AppDelegate.swift */; };
 		FAD3164F24BE18BD007466BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3164E24BE18BD007466BE /* SceneDelegate.swift */; };
 		FAD3165124BE18BD007466BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3165024BE18BD007466BE /* ViewController.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA24033F24C19BFC00C4A40C /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		FA24034124C19D6000C4A40C /* ForgotPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordPresenter.swift; sourceTree = "<group>"; };
 		FAD3164924BE18BD007466BE /* SwiftAppStructure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAppStructure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD3164C24BE18BD007466BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD3164E24BE18BD007466BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA24033E24C19BE600C4A40C /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				FA24033F24C19BFC00C4A40C /* ForgotPasswordViewController.swift */,
+				FA24034124C19D6000C4A40C /* ForgotPasswordPresenter.swift */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
 		FAD3164024BE18BD007466BE = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +164,7 @@
 		FAD3168824BE1B5F007466BE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FA24033E24C19BE600C4A40C /* ForgotPassword */,
 				FAD3168924BE1B68007466BE /* Login */,
 			);
 			path = Modules;
@@ -327,6 +341,8 @@
 				FAD3165724BE18BD007466BE /* SwiftAppStructure.xcdatamodeld in Sources */,
 				FAD3164D24BE18BD007466BE /* AppDelegate.swift in Sources */,
 				FAD3168B24BE1B80007466BE /* LoginViewController.swift in Sources */,
+				FA24034024C19BFC00C4A40C /* ForgotPasswordViewController.swift in Sources */,
+				FA24034224C19D6000C4A40C /* ForgotPasswordPresenter.swift in Sources */,
 				FAD3169324BE1BE9007466BE /* Config.swift in Sources */,
 				FAD3164F24BE18BD007466BE /* SceneDelegate.swift in Sources */,
 				FAD3169024BE1BA6007466BE /* User.swift in Sources */,
