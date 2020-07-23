@@ -8,9 +8,14 @@
 
 import UIKit
 
-class ForgotPasswordViewController: UIViewController {
+class ForgotPasswordViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+
+    @IBAction func onSendTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+
 }

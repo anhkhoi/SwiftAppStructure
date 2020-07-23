@@ -11,7 +11,6 @@
 		FA24034224C19D6000C4A40C /* ForgotPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA24034124C19D6000C4A40C /* ForgotPasswordPresenter.swift */; };
 		FAD3164D24BE18BD007466BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3164C24BE18BD007466BE /* AppDelegate.swift */; };
 		FAD3164F24BE18BD007466BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3164E24BE18BD007466BE /* SceneDelegate.swift */; };
-		FAD3165124BE18BD007466BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3165024BE18BD007466BE /* ViewController.swift */; };
 		FAD3165424BE18BD007466BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD3165224BE18BD007466BE /* Main.storyboard */; };
 		FAD3165724BE18BD007466BE /* SwiftAppStructure.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAD3165524BE18BD007466BE /* SwiftAppStructure.xcdatamodeld */; };
 		FAD3165924BE18BF007466BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD3165824BE18BF007466BE /* Assets.xcassets */; };
@@ -25,6 +24,8 @@
 		FAD3168D24BE1B92007466BE /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3168C24BE1B92007466BE /* LoginPresenter.swift */; };
 		FAD3169024BE1BA6007466BE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3168F24BE1BA6007466BE /* User.swift */; };
 		FAD3169324BE1BE9007466BE /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3169224BE1BE9007466BE /* Config.swift */; };
+		FAD4F06924C4A9DB001784B6 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD4F06824C4A9DB001784B6 /* APIEndpoints.swift */; };
+		FAECC04824C4C033007429A1 /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = FAECC04724C4C033007429A1 /* MBProgressHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +51,6 @@
 		FAD3164924BE18BD007466BE /* SwiftAppStructure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAppStructure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD3164C24BE18BD007466BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD3164E24BE18BD007466BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAD3165024BE18BD007466BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAD3165324BE18BD007466BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAD3165624BE18BD007466BE /* SwiftAppStructure.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftAppStructure.xcdatamodel; sourceTree = "<group>"; };
 		FAD3165824BE18BF007466BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +66,7 @@
 		FAD3168C24BE1B92007466BE /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		FAD3168F24BE1BA6007466BE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FAD3169224BE1BE9007466BE /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		FAD4F06824C4A9DB001784B6 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +76,7 @@
 			files = (
 				FAD3168724BE1934007466BE /* SwiftyJSON in Frameworks */,
 				FAD3168124BE18E8007466BE /* Alamofire in Frameworks */,
+				FAECC04824C4C033007429A1 /* MBProgressHUD in Frameworks */,
 				FAD3168424BE1920007466BE /* SwiftyBeaver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +98,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA09677B24CA09BC008E8476 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		FA24033E24C19BE600C4A40C /* ForgotPassword */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,7 +142,6 @@
 				FAD3168824BE1B5F007466BE /* Modules */,
 				FAD3164C24BE18BD007466BE /* AppDelegate.swift */,
 				FAD3164E24BE18BD007466BE /* SceneDelegate.swift */,
-				FAD3165024BE18BD007466BE /* ViewController.swift */,
 				FAD3165224BE18BD007466BE /* Main.storyboard */,
 				FAD3165824BE18BF007466BE /* Assets.xcassets */,
 				FAD3165A24BE18BF007466BE /* LaunchScreen.storyboard */,
@@ -164,6 +172,7 @@
 		FAD3168824BE1B5F007466BE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FA09677B24CA09BC008E8476 /* Home */,
 				FA24033E24C19BE600C4A40C /* ForgotPassword */,
 				FAD3168924BE1B68007466BE /* Login */,
 			);
@@ -191,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				FAD3169224BE1BE9007466BE /* Config.swift */,
+				FAD4F06824C4A9DB001784B6 /* APIEndpoints.swift */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -215,6 +225,7 @@
 				FAD3168024BE18E8007466BE /* Alamofire */,
 				FAD3168324BE1920007466BE /* SwiftyBeaver */,
 				FAD3168624BE1934007466BE /* SwiftyJSON */,
+				FAECC04724C4C033007429A1 /* MBProgressHUD */,
 			);
 			productName = SwiftAppStructure;
 			productReference = FAD3164924BE18BD007466BE /* SwiftAppStructure.app */;
@@ -292,6 +303,7 @@
 				FAD3167F24BE18E8007466BE /* XCRemoteSwiftPackageReference "Alamofire" */,
 				FAD3168224BE1920007466BE /* XCRemoteSwiftPackageReference "SwiftyBeaver" */,
 				FAD3168524BE1934007466BE /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				FAECC04624C4C033007429A1 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
 			);
 			productRefGroup = FAD3164A24BE18BD007466BE /* Products */;
 			projectDirPath = "";
@@ -337,11 +349,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD3168D24BE1B92007466BE /* LoginPresenter.swift in Sources */,
-				FAD3165124BE18BD007466BE /* ViewController.swift in Sources */,
 				FAD3165724BE18BD007466BE /* SwiftAppStructure.xcdatamodeld in Sources */,
 				FAD3164D24BE18BD007466BE /* AppDelegate.swift in Sources */,
 				FAD3168B24BE1B80007466BE /* LoginViewController.swift in Sources */,
 				FA24034024C19BFC00C4A40C /* ForgotPasswordViewController.swift in Sources */,
+				FAD4F06924C4A9DB001784B6 /* APIEndpoints.swift in Sources */,
 				FA24034224C19D6000C4A40C /* ForgotPasswordPresenter.swift in Sources */,
 				FAD3169324BE1BE9007466BE /* Config.swift in Sources */,
 				FAD3164F24BE18BD007466BE /* SceneDelegate.swift in Sources */,
@@ -696,6 +708,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		FAECC04624C4C033007429A1 /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -713,6 +733,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FAD3168524BE1934007466BE /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		FAECC04724C4C033007429A1 /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAECC04624C4C033007429A1 /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 

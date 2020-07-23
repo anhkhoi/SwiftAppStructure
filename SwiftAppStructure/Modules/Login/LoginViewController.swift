@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class LoginViewController: UITableViewController {
     
@@ -21,7 +22,17 @@ class LoginViewController: UITableViewController {
     }
 
     @IBAction func onLoginTapped(_ sender: Any) {
-        log.info("onLoginTapped")
+        let payload = [
+            "email": emailField.text,
+            "password": passwordField.text
+        ]
+        
+        log.info("onLoginTapped: \(payload)")
+        let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
+        hud.label.text = "Logging..."
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            hud.hide(animated: true)
+        }
     }
 }
 
