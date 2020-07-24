@@ -10,12 +10,6 @@ import Foundation
 
 struct Endpoints {
 
-    let abc: String
-
-    init(a: String) {
-        self.abc = a
-    }
-
     static let baseUrl = "https://ecommerce-admin-app.herokuapp.com"
 
     static func build(path: String) -> String {
