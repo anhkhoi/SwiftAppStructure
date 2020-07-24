@@ -8,6 +8,8 @@
 
 import UIKit
 import MBProgressHUD
+import Alamofire
+import Toast
 
 class LoginViewController: UITableViewController {
     
@@ -22,16 +24,53 @@ class LoginViewController: UITableViewController {
     }
 
     @IBAction func onLoginTapped(_ sender: Any) {
-        let payload = [
-            "email": emailField.text,
-            "password": passwordField.text
-        ]
-        
+        let payload = LoginRequest(
+            email: emailField.text!,
+            password: passwordField.text!
+        )
+
         log.info("onLoginTapped: \(payload)")
+
         let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
         hud.label.text = "Logging..."
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+
+        AF.request(
+            Endpoints.login,
+            method: .get
+            //parameters: payload
+        ).responseJSON { (response) in
             hud.hide(animated: true)
+            switch response.result {
+            case let .success(data):
+                var isSuccess = false
+                if let users = data as? [AnyObject] {
+                    for user in users {
+                        if let email = user.value(forKey: "email"),
+                            email as! String == payload.email {
+                            isSuccess = true
+                            break
+                        }
+                    }
+                }
+
+                var msgStyle = ToastStyle()
+                msgStyle.messageColor = .white
+                msgStyle.backgroundColor = .green
+                msgStyle.horizontalPadding = 10
+                msgStyle.verticalPadding = 10
+
+                if isSuccess {
+                    self.view.makeToast("Login succeeded.", duration: 3.0, position: .bottom, style: msgStyle)
+                    let sb = UIStoryboard(name: "Main", bundle: nil)
+                    let homeView = sb.instantiateViewController(withIdentifier: "HomeViewController") as UIViewController
+                    self.present(homeView, animated: true, completion: nil)
+                } else {
+                    msgStyle.backgroundColor = .red
+                    self.view.makeToast("Login failure. Please try again.", duration: 3.0, position: .bottom, style: msgStyle)
+                }
+            case let .failure(error):
+                log.error(error)
+            }
         }
     }
 }
