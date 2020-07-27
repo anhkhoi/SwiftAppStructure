@@ -6,4 +6,59 @@
 //  Copyright © 2020 Khoi Tran. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import Toast
+import MBProgressHUD
+
+class LoginPresenter {
+
+    var view: UIView
+    var msgStyle: ToastStyle!
+    var hud: MBProgressHUD!
+
+    init(_ view: UIView) {
+        self.view = view
+        msgStyle = self.setToastStyle()
+    }
+
+    private func setToastStyle() -> ToastStyle {
+        var style = ToastStyle()
+        style.messageColor = .white
+        style.horizontalPadding = 10
+        style.verticalPadding = 10
+        return style
+    }
+
+    static func isLogging() -> Bool {
+        return true
+    }
+
+    func showIndicator() {
+        hud = MBProgressHUD.showAdded(to: view, animated: true)
+        hud.label.text = "Logging..."
+    }
+
+    func hideIndicator() {
+        hud.hide(animated: true)
+    }
+
+    func requestSuccess() {
+        msgStyle.backgroundColor = .green
+        self.view.makeToast(
+            "Login succeeded.",
+            duration: 3.0,
+            position: .bottom,
+            style: msgStyle
+        )
+    }
+
+    func requestFailure() {
+        msgStyle.backgroundColor = .red
+        self.view.makeToast(
+            "Login failure. Please try again.",
+            duration: 3.0,
+            position: .bottom,
+            style: msgStyle
+        )
+    }
+}

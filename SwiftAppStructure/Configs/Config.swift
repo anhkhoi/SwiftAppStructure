@@ -11,3 +11,11 @@ import Foundation
 enum AppEnv: String {
     case dev, stag, prod
 }
+
+enum StoryboardName: String {
+    case main = "Main"
+}
+
+enum StoryboardID: String {
+    case home = "HomeViewController"
+}
