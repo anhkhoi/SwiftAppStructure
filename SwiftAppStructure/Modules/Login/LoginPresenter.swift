@@ -10,6 +10,11 @@ import UIKit
 import Toast
 import MBProgressHUD
 
+enum LoginMessage: String {
+    case success = "Login succeeded."
+    case failure = "Login failure. Please try again."
+}
+
 class LoginPresenter {
 
     var view: UIView
@@ -45,7 +50,7 @@ class LoginPresenter {
     func requestSuccess() {
         msgStyle.backgroundColor = .green
         self.view.makeToast(
-            "Login succeeded.",
+            LoginMessage.success.rawValue,
             duration: 3.0,
             position: .bottom,
             style: msgStyle
@@ -55,7 +60,7 @@ class LoginPresenter {
     func requestFailure() {
         msgStyle.backgroundColor = .red
         self.view.makeToast(
-            "Login failure. Please try again.",
+            LoginMessage.failure.rawValue,
             duration: 3.0,
             position: .bottom,
             style: msgStyle
