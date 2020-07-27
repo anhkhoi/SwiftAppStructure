@@ -15,6 +15,7 @@
 		FAA3D9A824CB58F000A15221 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA3D9A724CB58F000A15221 /* HomeViewController.swift */; };
 		FAB966FA24CF46D000CD584D /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = FAB966F924CF46D000CD584D /* MBProgressHUD */; };
 		FAB966FD24CF4B4A00CD584D /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB966FC24CF4B4A00CD584D /* Commons.swift */; };
+		FAB9670224CF510E00CD584D /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB9670124CF510E00CD584D /* MainTabBarViewController.swift */; };
 		FAD3164D24BE18BD007466BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD3164C24BE18BD007466BE /* AppDelegate.swift */; };
 		FAD3165424BE18BD007466BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD3165224BE18BD007466BE /* Main.storyboard */; };
 		FAD3165724BE18BD007466BE /* SwiftAppStructure.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAD3165524BE18BD007466BE /* SwiftAppStructure.xcdatamodeld */; };
@@ -55,6 +56,7 @@
 		FAA3D9A224CB52BD00A15221 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		FAA3D9A724CB58F000A15221 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FAB966FC24CF4B4A00CD584D /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
+		FAB9670124CF510E00CD584D /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		FAD3164924BE18BD007466BE /* SwiftAppStructure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAppStructure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD3164C24BE18BD007466BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD3165324BE18BD007466BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -136,6 +138,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		FAB966FE24CF50DD00CD584D /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				FAB9670124CF510E00CD584D /* MainTabBarViewController.swift */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
 		FAD3164024BE18BD007466BE = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +205,7 @@
 		FAD3168824BE1B5F007466BE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				FAB966FE24CF50DD00CD584D /* MainTab */,
 				FA09677B24CA09BC008E8476 /* Home */,
 				FA24033E24C19BE600C4A40C /* ForgotPassword */,
 				FAD3168924BE1B68007466BE /* Login */,
@@ -381,6 +392,7 @@
 				FAA3D9A124CB509900A15221 /* Endpoints.swift in Sources */,
 				FA24034024C19BFC00C4A40C /* ForgotPasswordViewController.swift in Sources */,
 				FA24034224C19D6000C4A40C /* ForgotPasswordPresenter.swift in Sources */,
+				FAB9670224CF510E00CD584D /* MainTabBarViewController.swift in Sources */,
 				FAD3169324BE1BE9007466BE /* Config.swift in Sources */,
 				FAB966FD24CF4B4A00CD584D /* Commons.swift in Sources */,
 				FAD3169024BE1BA6007466BE /* User.swift in Sources */,

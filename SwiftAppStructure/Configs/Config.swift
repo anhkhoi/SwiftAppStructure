@@ -18,4 +18,5 @@ enum StoryboardName: String {
 
 enum StoryboardID: String {
     case home = "HomeViewController"
+    case mainTab = "MainTabBarViewController"
 }
