@@ -49,6 +49,8 @@ class LoginViewController: UITableViewController {
                         if let email = user.value(forKey: "email"),
                             email as! String == payload.email {
                             isSuccess = true
+                            UserDefaults.standard.set(email, forKey: StorageKey.loginEmail.rawValue)
+                            UserDefaults.standard.synchronize()
                             break
                         }
                     }
@@ -69,7 +71,7 @@ class LoginViewController: UITableViewController {
     private func openHomeView() {
         let homeView = Commons.initViewController(
             StoryboardName.main.rawValue,
-            StoryboardID.home.rawValue
+            StoryboardID.mainTab.rawValue
         )
         self.present(homeView, animated: true, completion: nil)
     }

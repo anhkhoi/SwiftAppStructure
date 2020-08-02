@@ -27,7 +27,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 StoryboardName.main.rawValue,
                 StoryboardID.mainTab.rawValue
             )
-
             window?.rootViewController = homeView
         }
 

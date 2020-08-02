@@ -35,7 +35,11 @@ class LoginPresenter {
     }
 
     static func isLogging() -> Bool {
-        return true
+        let pref = UserDefaults.standard
+        let loginEmail = pref.value(
+            forKey: StorageKey.loginEmail.rawValue
+        )
+        return loginEmail == nil ? false : true
     }
 
     func showIndicator() {

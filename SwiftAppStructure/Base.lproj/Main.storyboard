@@ -264,7 +264,7 @@
             </objects>
             <point key="canvasLocation" x="551" y="323"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="l1y-PG-F35">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" modalPresentationStyle="fullScreen" id="vpQ-GN-Pdg" customClass="HomeViewController" customModule="SwiftAppStructure" customModuleProvider="target" sceneMemberID="viewController">
@@ -278,25 +278,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="1rd-U5-asQ">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zd7-ea-J9d">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="ios-qD-kGC"/>
+                                    <constraint firstAttribute="height" constant="44" id="B3n-Sn-1rW"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Home" id="AUK-cC-X3c"/>
+                                </items>
+                            </navigationBar>
+                            <searchBar contentMode="redraw" placeholder="Enter your desired things" translatesAutoresizingMaskIntoConstraints="NO" id="1rd-U5-asQ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="xob-jI-CGT"/>
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="1rd-U5-asQ" firstAttribute="trailing" secondItem="fVQ-cz-VlB" secondAttribute="trailing" id="VDt-RD-J9g"/>
-                            <constraint firstItem="1rd-U5-asQ" firstAttribute="leading" secondItem="fVQ-cz-VlB" secondAttribute="leading" id="dr2-oU-144"/>
+                            <constraint firstItem="1rd-U5-asQ" firstAttribute="leading" secondItem="fVQ-cz-VlB" secondAttribute="leading" id="1KA-NA-q7a"/>
+                            <constraint firstItem="zd7-ea-J9d" firstAttribute="top" secondItem="fVQ-cz-VlB" secondAttribute="top" id="Axw-Ze-Dbe"/>
+                            <constraint firstItem="1rd-U5-asQ" firstAttribute="trailing" secondItem="fVQ-cz-VlB" secondAttribute="trailing" id="Kh2-P0-wci"/>
+                            <constraint firstItem="zd7-ea-J9d" firstAttribute="trailing" secondItem="fVQ-cz-VlB" secondAttribute="trailing" id="MNp-Wg-hkh"/>
+                            <constraint firstItem="zd7-ea-J9d" firstAttribute="leading" secondItem="fVQ-cz-VlB" secondAttribute="leading" id="lTI-4d-DEs"/>
+                            <constraint firstItem="1rd-U5-asQ" firstAttribute="top" secondItem="zd7-ea-J9d" secondAttribute="bottom" id="m4T-YU-xPf"/>
                             <constraint firstItem="Nsp-Qq-gjk" firstAttribute="centerX" secondItem="O0p-VY-31s" secondAttribute="centerX" id="s1k-wG-Xkn"/>
-                            <constraint firstItem="1rd-U5-asQ" firstAttribute="top" secondItem="fVQ-cz-VlB" secondAttribute="top" id="smJ-K5-aPe"/>
                             <constraint firstItem="Nsp-Qq-gjk" firstAttribute="centerY" secondItem="O0p-VY-31s" secondAttribute="centerY" id="z8h-WK-ZIC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fVQ-cz-VlB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="hca-NK-1CY"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="hca-NK-1CY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hdS-Bb-djI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -305,9 +317,10 @@
         <!--Main Tab Bar View Controller-->
         <scene sceneID="o2v-2j-ckx">
             <objects>
-                <tabBarController storyboardIdentifier="MainTabBarViewController" automaticallyAdjustsScrollViewInsets="NO" id="a90-D0-mbY" customClass="MainTabBarViewController" customModule="SwiftAppStructure" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarViewController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="a90-D0-mbY" customClass="MainTabBarViewController" customModule="SwiftAppStructure" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BD5-G6-KhI">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -321,29 +334,39 @@
             </objects>
             <point key="canvasLocation" x="1319" y="729"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="et7-Dq-JGF">
             <objects>
-                <viewController id="BRc-RZ-Zbx" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingViewController" id="BRc-RZ-Zbx" customClass="SettingViewController" customModule="SwiftAppStructure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i1E-0Q-LEl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyF-NL-uzw">
-                                <rect key="frame" x="182.5" y="437.5" width="49" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xGP-3u-M5z">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="JpY-4O-N6R"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Settings" id="4u0-yC-aHL">
+                                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="uAy-vB-8fa">
+                                            <connections>
+                                                <action selector="onLogoutTapped:" destination="BRc-RZ-Zbx" id="gso-nf-JdE"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="iyF-NL-uzw" firstAttribute="centerX" secondItem="i1E-0Q-LEl" secondAttribute="centerX" id="8Rs-My-3qr"/>
-                            <constraint firstItem="iyF-NL-uzw" firstAttribute="centerY" secondItem="i1E-0Q-LEl" secondAttribute="centerY" id="CvO-ao-ygq"/>
+                            <constraint firstItem="xGP-3u-M5z" firstAttribute="leading" secondItem="AZ5-1U-6Wc" secondAttribute="leading" id="ZOz-au-DPs"/>
+                            <constraint firstItem="xGP-3u-M5z" firstAttribute="top" secondItem="AZ5-1U-6Wc" secondAttribute="top" id="hi4-4y-MK7"/>
+                            <constraint firstItem="xGP-3u-M5z" firstAttribute="trailing" secondItem="AZ5-1U-6Wc" secondAttribute="trailing" id="sRd-2i-T69"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AZ5-1U-6Wc"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="WVu-Gp-6Ef"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="circle.grid.2x2" catalog="system" id="WVu-Gp-6Ef"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KVz-4o-APD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -378,4 +401,8 @@
             <point key="canvasLocation" x="2288" y="1004"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="circle.grid.2x2" catalog="system" width="128" height="112"/>
+        <image name="house" catalog="system" width="128" height="110"/>
+    </resources>
 </document>

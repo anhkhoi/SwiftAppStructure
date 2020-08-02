@@ -17,6 +17,11 @@ enum StoryboardName: String {
 }
 
 enum StoryboardID: String {
+    case login = "LoginViewController"
     case home = "HomeViewController"
     case mainTab = "MainTabBarViewController"
+}
+
+enum StorageKey: String {
+    case loginEmail = "loginEmail"
 }

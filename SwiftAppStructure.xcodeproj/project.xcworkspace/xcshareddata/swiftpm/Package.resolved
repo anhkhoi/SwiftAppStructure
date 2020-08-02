@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "FontAwesome",
+        "repositoryURL": "https://github.com/thii/FontAwesome.swift",
+        "state": {
+          "branch": null,
+          "revision": "2684b5bcde5bf712d45c14dac8f474917a65ec13",
+          "version": "1.9.0"
+        }
+      },
+      {
         "package": "MBProgressHUD",
         "repositoryURL": "https://github.com/jdg/MBProgressHUD",
         "state": {
