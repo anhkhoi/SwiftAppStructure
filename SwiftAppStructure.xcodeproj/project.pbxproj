@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADE77FC024D9768100BC3BEC /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE77FBF24D9768100BC3BEC /* FeedViewController.swift */; };
 		FA002A8724D716AB00735BC3 /* FontAwesome in Frameworks */ = {isa = PBXBuildFile; productRef = FA002A8624D716AB00735BC3 /* FontAwesome */; };
 		FA002A8A24D7182F00735BC3 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA002A8924D7182F00735BC3 /* SettingViewController.swift */; };
 		FA002A8C24D7189F00735BC3 /* SettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA002A8B24D7189F00735BC3 /* SettingPresenter.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ADE77FBF24D9768100BC3BEC /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		FA002A8924D7182F00735BC3 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		FA002A8B24D7189F00735BC3 /* SettingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPresenter.swift; sourceTree = "<group>"; };
 		FA24033F24C19BFC00C4A40C /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ADE77FBE24D9757500BC3BEC /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				ADE77FBF24D9768100BC3BEC /* FeedViewController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
 		FA002A8824D7181C00735BC3 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +230,7 @@
 		FAD3168824BE1B5F007466BE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				ADE77FBE24D9757500BC3BEC /* Feed */,
 				FA002A8824D7181C00735BC3 /* Setting */,
 				FAB966FE24CF50DD00CD584D /* MainTab */,
 				FA09677B24CA09BC008E8476 /* Home */,
@@ -409,6 +420,7 @@
 				FAD3168B24BE1B80007466BE /* LoginViewController.swift in Sources */,
 				FAA3D9A124CB509900A15221 /* Endpoints.swift in Sources */,
 				FA002A8A24D7182F00735BC3 /* SettingViewController.swift in Sources */,
+				ADE77FC024D9768100BC3BEC /* FeedViewController.swift in Sources */,
 				FA24034024C19BFC00C4A40C /* ForgotPasswordViewController.swift in Sources */,
 				FA24034224C19D6000C4A40C /* ForgotPasswordPresenter.swift in Sources */,
 				FAB9670224CF510E00CD584D /* MainTabBarViewController.swift in Sources */,
