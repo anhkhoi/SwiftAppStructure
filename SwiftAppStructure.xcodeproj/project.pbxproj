@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ADE77FC024D9768100BC3BEC /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE77FBF24D9768100BC3BEC /* FeedViewController.swift */; };
+		ADE77FC224D9775A00BC3BEC /* MainTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE77FC124D9775A00BC3BEC /* MainTab.storyboard */; };
 		FA002A8724D716AB00735BC3 /* FontAwesome in Frameworks */ = {isa = PBXBuildFile; productRef = FA002A8624D716AB00735BC3 /* FontAwesome */; };
 		FA002A8A24D7182F00735BC3 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA002A8924D7182F00735BC3 /* SettingViewController.swift */; };
 		FA002A8C24D7189F00735BC3 /* SettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA002A8B24D7189F00735BC3 /* SettingPresenter.swift */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		ADE77FBF24D9768100BC3BEC /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		ADE77FC124D9775A00BC3BEC /* MainTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainTab.storyboard; sourceTree = "<group>"; };
 		FA002A8924D7182F00735BC3 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		FA002A8B24D7189F00735BC3 /* SettingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPresenter.swift; sourceTree = "<group>"; };
 		FA24033F24C19BFC00C4A40C /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 		FAB966FE24CF50DD00CD584D /* MainTab */ = {
 			isa = PBXGroup;
 			children = (
+				ADE77FC124D9775A00BC3BEC /* MainTab.storyboard */,
 				FAB9670124CF510E00CD584D /* MainTabBarViewController.swift */,
 			);
 			path = MainTab;
@@ -388,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD3165C24BE18BF007466BE /* LaunchScreen.storyboard in Resources */,
+				ADE77FC224D9775A00BC3BEC /* MainTab.storyboard in Resources */,
 				FAD3165924BE18BF007466BE /* Assets.xcassets in Resources */,
 				FAD3165424BE18BD007466BE /* Main.storyboard in Resources */,
 			);
