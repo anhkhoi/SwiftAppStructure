@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD68FA6C24DC6CFF00709569 /* ImageSlideshow in Frameworks */ = {isa = PBXBuildFile; productRef = AD68FA6B24DC6CFF00709569 /* ImageSlideshow */; };
 		ADA7B20224DC67050094AEE9 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA7B20124DC67050094AEE9 /* Home.storyboard */; };
 		ADA7B20424DC672C0094AEE9 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA7B20324DC672C0094AEE9 /* Feed.storyboard */; };
 		ADA7B20624DC67550094AEE9 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA7B20524DC67550094AEE9 /* Setting.storyboard */; };
@@ -102,6 +103,7 @@
 				FAA3D9A624CB570800A15221 /* Toast in Frameworks */,
 				FAD3168424BE1920007466BE /* SwiftyBeaver in Frameworks */,
 				FA002A8724D716AB00735BC3 /* FontAwesome in Frameworks */,
+				AD68FA6C24DC6CFF00709569 /* ImageSlideshow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +304,7 @@
 				FAA3D9A524CB570800A15221 /* Toast */,
 				FAB966F924CF46D000CD584D /* MBProgressHUD */,
 				FA002A8624D716AB00735BC3 /* FontAwesome */,
+				AD68FA6B24DC6CFF00709569 /* ImageSlideshow */,
 			);
 			productName = SwiftAppStructure;
 			productReference = FAD3164924BE18BD007466BE /* SwiftAppStructure.app */;
@@ -382,6 +385,7 @@
 				FAECC04624C4C033007429A1 /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
 				FAA3D9A424CB570800A15221 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 				FA002A8524D716AB00735BC3 /* XCRemoteSwiftPackageReference "FontAwesome" */,
+				AD68FA6A24DC6CFF00709569 /* XCRemoteSwiftPackageReference "ImageSlideshow" */,
 			);
 			productRefGroup = FAD3164A24BE18BD007466BE /* Products */;
 			projectDirPath = "";
@@ -772,6 +776,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		AD68FA6A24DC6CFF00709569 /* XCRemoteSwiftPackageReference "ImageSlideshow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zvonicek/ImageSlideshow";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.1;
+			};
+		};
 		FA002A8524D716AB00735BC3 /* XCRemoteSwiftPackageReference "FontAwesome" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/thii/FontAwesome.swift";
@@ -823,6 +835,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AD68FA6B24DC6CFF00709569 /* ImageSlideshow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD68FA6A24DC6CFF00709569 /* XCRemoteSwiftPackageReference "ImageSlideshow" */;
+			productName = ImageSlideshow;
+		};
 		FA002A8624D716AB00735BC3 /* FontAwesome */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FA002A8524D716AB00735BC3 /* XCRemoteSwiftPackageReference "FontAwesome" */;

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,15 +13,9 @@
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" modalPresentationStyle="fullScreen" id="vpQ-GN-Pdg" customClass="HomeViewController" customModule="SwiftAppStructure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O0p-VY-31s">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsp-Qq-gjk">
-                                <rect key="frame" x="184" y="437.5" width="46" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zd7-ea-J9d">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <constraints>
@@ -36,6 +32,13 @@
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVF-7w-qNt" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="0.0" y="132" width="414" height="170"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="HIm-Vc-L6N"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -43,14 +46,18 @@
                             <constraint firstItem="zd7-ea-J9d" firstAttribute="top" secondItem="fVQ-cz-VlB" secondAttribute="top" id="Axw-Ze-Dbe"/>
                             <constraint firstItem="1rd-U5-asQ" firstAttribute="trailing" secondItem="fVQ-cz-VlB" secondAttribute="trailing" id="Kh2-P0-wci"/>
                             <constraint firstItem="zd7-ea-J9d" firstAttribute="trailing" secondItem="fVQ-cz-VlB" secondAttribute="trailing" id="MNp-Wg-hkh"/>
+                            <constraint firstItem="wVF-7w-qNt" firstAttribute="leading" secondItem="fVQ-cz-VlB" secondAttribute="leading" id="PDQ-Z7-MEy"/>
+                            <constraint firstItem="wVF-7w-qNt" firstAttribute="trailing" secondItem="fVQ-cz-VlB" secondAttribute="trailing" id="YIy-ej-1lP"/>
+                            <constraint firstItem="wVF-7w-qNt" firstAttribute="top" secondItem="1rd-U5-asQ" secondAttribute="bottom" id="dmz-jg-4S2"/>
                             <constraint firstItem="zd7-ea-J9d" firstAttribute="leading" secondItem="fVQ-cz-VlB" secondAttribute="leading" id="lTI-4d-DEs"/>
                             <constraint firstItem="1rd-U5-asQ" firstAttribute="top" secondItem="zd7-ea-J9d" secondAttribute="bottom" id="m4T-YU-xPf"/>
-                            <constraint firstItem="Nsp-Qq-gjk" firstAttribute="centerX" secondItem="O0p-VY-31s" secondAttribute="centerX" id="s1k-wG-Xkn"/>
-                            <constraint firstItem="Nsp-Qq-gjk" firstAttribute="centerY" secondItem="O0p-VY-31s" secondAttribute="centerY" id="z8h-WK-ZIC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fVQ-cz-VlB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="hca-NK-1CY"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" selectedImage="HomeSelected" id="hca-NK-1CY"/>
+                    <connections>
+                        <outlet property="slideshow" destination="wVF-7w-qNt" id="vHI-C6-NVR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hdS-Bb-djI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -58,6 +65,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="Home" width="29" height="28.5"/>
+        <image name="HomeSelected" width="29" height="28.5"/>
     </resources>
 </document>
