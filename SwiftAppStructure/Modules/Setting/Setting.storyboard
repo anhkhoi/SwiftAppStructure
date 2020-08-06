@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="et7-Dq-JGF">
+            <objects>
+                <viewController storyboardIdentifier="SettingViewController" id="BRc-RZ-Zbx" customClass="SettingViewController" customModule="SwiftAppStructure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i1E-0Q-LEl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xGP-3u-M5z">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="JpY-4O-N6R"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Settings" id="4u0-yC-aHL">
+                                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="uAy-vB-8fa">
+                                            <connections>
+                                                <action selector="onLogoutTapped:" destination="BRc-RZ-Zbx" id="gso-nf-JdE"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xGP-3u-M5z" firstAttribute="leading" secondItem="AZ5-1U-6Wc" secondAttribute="leading" id="ZOz-au-DPs"/>
+                            <constraint firstItem="xGP-3u-M5z" firstAttribute="top" secondItem="AZ5-1U-6Wc" secondAttribute="top" id="hi4-4y-MK7"/>
+                            <constraint firstItem="xGP-3u-M5z" firstAttribute="trailing" secondItem="AZ5-1U-6Wc" secondAttribute="trailing" id="sRd-2i-T69"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AZ5-1U-6Wc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="circle.grid.2x2" catalog="system" id="WVu-Gp-6Ef"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KVz-4o-APD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2288" y="1705"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle.grid.2x2" catalog="system" width="128" height="112"/>
+    </resources>
+</document>

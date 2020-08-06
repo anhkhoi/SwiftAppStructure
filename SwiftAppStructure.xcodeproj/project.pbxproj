@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADA7B20224DC67050094AEE9 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA7B20124DC67050094AEE9 /* Home.storyboard */; };
+		ADA7B20424DC672C0094AEE9 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA7B20324DC672C0094AEE9 /* Feed.storyboard */; };
+		ADA7B20624DC67550094AEE9 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA7B20524DC67550094AEE9 /* Setting.storyboard */; };
 		ADE77FC024D9768100BC3BEC /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE77FBF24D9768100BC3BEC /* FeedViewController.swift */; };
 		ADE77FC224D9775A00BC3BEC /* MainTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE77FC124D9775A00BC3BEC /* MainTab.storyboard */; };
 		FA002A8724D716AB00735BC3 /* FontAwesome in Frameworks */ = {isa = PBXBuildFile; productRef = FA002A8624D716AB00735BC3 /* FontAwesome */; };
@@ -55,6 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ADA7B20124DC67050094AEE9 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		ADA7B20324DC672C0094AEE9 /* Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
+		ADA7B20524DC67550094AEE9 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		ADE77FBF24D9768100BC3BEC /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		ADE77FC124D9775A00BC3BEC /* MainTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainTab.storyboard; sourceTree = "<group>"; };
 		FA002A8924D7182F00735BC3 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +125,7 @@
 		ADE77FBE24D9757500BC3BEC /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				ADA7B20324DC672C0094AEE9 /* Feed.storyboard */,
 				ADE77FBF24D9768100BC3BEC /* FeedViewController.swift */,
 			);
 			path = Feed;
@@ -127,6 +134,7 @@
 		FA002A8824D7181C00735BC3 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				ADA7B20524DC67550094AEE9 /* Setting.storyboard */,
 				FA002A8924D7182F00735BC3 /* SettingViewController.swift */,
 				FA002A8B24D7189F00735BC3 /* SettingPresenter.swift */,
 			);
@@ -136,6 +144,7 @@
 		FA09677B24CA09BC008E8476 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				ADA7B20124DC67050094AEE9 /* Home.storyboard */,
 				FAA3D9A724CB58F000A15221 /* HomeViewController.swift */,
 			);
 			path = Home;
@@ -391,6 +400,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD3165C24BE18BF007466BE /* LaunchScreen.storyboard in Resources */,
+				ADA7B20224DC67050094AEE9 /* Home.storyboard in Resources */,
+				ADA7B20624DC67550094AEE9 /* Setting.storyboard in Resources */,
+				ADA7B20424DC672C0094AEE9 /* Feed.storyboard in Resources */,
 				ADE77FC224D9775A00BC3BEC /* MainTab.storyboard in Resources */,
 				FAD3165924BE18BF007466BE /* Assets.xcassets in Resources */,
 				FAD3165424BE18BD007466BE /* Main.storyboard in Resources */,

@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -263,37 +264,133 @@
             </objects>
             <point key="canvasLocation" x="551" y="323"/>
         </scene>
+        <!--Home-->
+        <scene sceneID="l1y-PG-F35">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" modalPresentationStyle="fullScreen" id="vpQ-GN-Pdg" customClass="HomeViewController" customModule="SwiftAppStructure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O0p-VY-31s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsp-Qq-gjk">
+                                <rect key="frame" x="184" y="437.5" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zd7-ea-J9d">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="B3n-Sn-1rW"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Home" id="AUK-cC-X3c"/>
+                                </items>
+                            </navigationBar>
+                            <searchBar contentMode="redraw" placeholder="Enter your desired things" translatesAutoresizingMaskIntoConstraints="NO" id="1rd-U5-asQ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="xob-jI-CGT"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1rd-U5-asQ" firstAttribute="leading" secondItem="fVQ-cz-VlB" secondAttribute="leading" id="1KA-NA-q7a"/>
+                            <constraint firstItem="zd7-ea-J9d" firstAttribute="top" secondItem="fVQ-cz-VlB" secondAttribute="top" id="Axw-Ze-Dbe"/>
+                            <constraint firstItem="1rd-U5-asQ" firstAttribute="trailing" secondItem="fVQ-cz-VlB" secondAttribute="trailing" id="Kh2-P0-wci"/>
+                            <constraint firstItem="zd7-ea-J9d" firstAttribute="trailing" secondItem="fVQ-cz-VlB" secondAttribute="trailing" id="MNp-Wg-hkh"/>
+                            <constraint firstItem="zd7-ea-J9d" firstAttribute="leading" secondItem="fVQ-cz-VlB" secondAttribute="leading" id="lTI-4d-DEs"/>
+                            <constraint firstItem="1rd-U5-asQ" firstAttribute="top" secondItem="zd7-ea-J9d" secondAttribute="bottom" id="m4T-YU-xPf"/>
+                            <constraint firstItem="Nsp-Qq-gjk" firstAttribute="centerX" secondItem="O0p-VY-31s" secondAttribute="centerX" id="s1k-wG-Xkn"/>
+                            <constraint firstItem="Nsp-Qq-gjk" firstAttribute="centerY" secondItem="O0p-VY-31s" secondAttribute="centerY" id="z8h-WK-ZIC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fVQ-cz-VlB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="hca-NK-1CY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdS-Bb-djI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2288.4057971014495" y="322.76785714285711"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="et7-Dq-JGF">
+            <objects>
+                <viewController storyboardIdentifier="SettingViewController" id="BRc-RZ-Zbx" customClass="SettingViewController" customModule="SwiftAppStructure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i1E-0Q-LEl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xGP-3u-M5z">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="JpY-4O-N6R"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Settings" id="4u0-yC-aHL">
+                                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="uAy-vB-8fa">
+                                            <connections>
+                                                <action selector="onLogoutTapped:" destination="BRc-RZ-Zbx" id="gso-nf-JdE"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xGP-3u-M5z" firstAttribute="leading" secondItem="AZ5-1U-6Wc" secondAttribute="leading" id="ZOz-au-DPs"/>
+                            <constraint firstItem="xGP-3u-M5z" firstAttribute="top" secondItem="AZ5-1U-6Wc" secondAttribute="top" id="hi4-4y-MK7"/>
+                            <constraint firstItem="xGP-3u-M5z" firstAttribute="trailing" secondItem="AZ5-1U-6Wc" secondAttribute="trailing" id="sRd-2i-T69"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AZ5-1U-6Wc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="circle.grid.2x2" catalog="system" id="WVu-Gp-6Ef"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KVz-4o-APD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2288" y="1705"/>
+        </scene>
+        <!--Feed View Controller-->
+        <scene sceneID="kJx-K2-OGS">
+            <objects>
+                <viewController storyboardIdentifier="FeedViewController" id="Zat-DF-kdJ" customClass="FeedViewController" customModule="SwiftAppStructure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NKI-Dc-vWf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgN-OM-r42">
+                                <rect key="frame" x="167" y="437.5" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rgN-OM-r42" firstAttribute="centerX" secondItem="NKI-Dc-vWf" secondAttribute="centerX" id="Nhw-Qy-h96"/>
+                            <constraint firstItem="rgN-OM-r42" firstAttribute="centerY" secondItem="NKI-Dc-vWf" secondAttribute="centerY" id="mTs-6e-2rS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gkk-oo-LLz"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="recents" id="BSd-at-PYN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iMr-9y-yZ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2288" y="1004"/>
+        </scene>
         <!--MainTabBarViewController-->
         <scene sceneID="kkK-mP-NAP">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="MainTabBarViewController" storyboardName="MainTab" referencedIdentifier="MainTabBarViewController" id="Lye-dS-Ifg" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pfj-eW-YXl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1486" y="366"/>
-        </scene>
-        <!--HomeViewController-->
-        <scene sceneID="xoE-kW-GU3">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="HomeViewController" storyboardName="Home" referencedIdentifier="HomeViewController" id="jPb-TR-uhc" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GJj-2A-vWx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1863" y="301"/>
-        </scene>
-        <!--FeedViewController-->
-        <scene sceneID="W65-ob-lta">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="FeedViewController" storyboardName="Feed" referencedIdentifier="FeedViewController" id="LhZ-gv-IQX" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uVc-qN-1ip" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1865" y="366"/>
-        </scene>
-        <!--SettingViewController-->
-        <scene sceneID="2dO-Ji-VTy">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="SettingViewController" storyboardName="Setting" referencedIdentifier="SettingViewController" id="mme-17-FP7" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xPX-k7-4pm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1874" y="435"/>
+            <point key="canvasLocation" x="1319" y="729"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="circle.grid.2x2" catalog="system" width="128" height="112"/>
+        <image name="house" catalog="system" width="128" height="110"/>
+    </resources>
 </document>

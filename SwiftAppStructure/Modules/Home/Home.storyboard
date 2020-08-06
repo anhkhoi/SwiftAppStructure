@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="l1y-PG-F35">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" modalPresentationStyle="fullScreen" id="vpQ-GN-Pdg" customClass="HomeViewController" customModule="SwiftAppStructure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O0p-VY-31s">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nsp-Qq-gjk">
+                                <rect key="frame" x="184" y="437.5" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zd7-ea-J9d">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="B3n-Sn-1rW"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Home" id="AUK-cC-X3c"/>
+                                </items>
+                            </navigationBar>
+                            <searchBar contentMode="redraw" placeholder="Enter your desired things" translatesAutoresizingMaskIntoConstraints="NO" id="1rd-U5-asQ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="xob-jI-CGT"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1rd-U5-asQ" firstAttribute="leading" secondItem="fVQ-cz-VlB" secondAttribute="leading" id="1KA-NA-q7a"/>
+                            <constraint firstItem="zd7-ea-J9d" firstAttribute="top" secondItem="fVQ-cz-VlB" secondAttribute="top" id="Axw-Ze-Dbe"/>
+                            <constraint firstItem="1rd-U5-asQ" firstAttribute="trailing" secondItem="fVQ-cz-VlB" secondAttribute="trailing" id="Kh2-P0-wci"/>
+                            <constraint firstItem="zd7-ea-J9d" firstAttribute="trailing" secondItem="fVQ-cz-VlB" secondAttribute="trailing" id="MNp-Wg-hkh"/>
+                            <constraint firstItem="zd7-ea-J9d" firstAttribute="leading" secondItem="fVQ-cz-VlB" secondAttribute="leading" id="lTI-4d-DEs"/>
+                            <constraint firstItem="1rd-U5-asQ" firstAttribute="top" secondItem="zd7-ea-J9d" secondAttribute="bottom" id="m4T-YU-xPf"/>
+                            <constraint firstItem="Nsp-Qq-gjk" firstAttribute="centerX" secondItem="O0p-VY-31s" secondAttribute="centerX" id="s1k-wG-Xkn"/>
+                            <constraint firstItem="Nsp-Qq-gjk" firstAttribute="centerY" secondItem="O0p-VY-31s" secondAttribute="centerY" id="z8h-WK-ZIC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fVQ-cz-VlB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="hca-NK-1CY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdS-Bb-djI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2288.4057971014495" y="322.76785714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house" catalog="system" width="128" height="110"/>
+    </resources>
+</document>
