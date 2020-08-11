@@ -15,6 +15,7 @@
 		AD74344224E2585900CAB552 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD74344124E2585900CAB552 /* ProfileViewController.swift */; };
 		AD74344424E2587A00CAB552 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD74344324E2587A00CAB552 /* Profile.storyboard */; };
 		AD74344624E26A7300CAB552 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD74344524E26A7300CAB552 /* BaseViewController.swift */; };
+		AD74344824E27B5D00CAB552 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD74344724E27B5D00CAB552 /* Badge.swift */; };
 		ADA7B20224DC67050094AEE9 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA7B20124DC67050094AEE9 /* Home.storyboard */; };
 		ADA7B20424DC672C0094AEE9 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA7B20324DC672C0094AEE9 /* Feed.storyboard */; };
 		ADA7B20624DC67550094AEE9 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA7B20524DC67550094AEE9 /* Setting.storyboard */; };
@@ -73,6 +74,7 @@
 		AD74344124E2585900CAB552 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		AD74344324E2587A00CAB552 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		AD74344524E26A7300CAB552 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		AD74344724E27B5D00CAB552 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		ADA7B20124DC67050094AEE9 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		ADA7B20324DC672C0094AEE9 /* Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		ADA7B20524DC67550094AEE9 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 			children = (
 				ADA7B20124DC67050094AEE9 /* Home.storyboard */,
 				FAA3D9A724CB58F000A15221 /* HomeViewController.swift */,
+				AD74344724E27B5D00CAB552 /* Badge.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -489,6 +492,7 @@
 				FAD3168B24BE1B80007466BE /* LoginViewController.swift in Sources */,
 				AD74344624E26A7300CAB552 /* BaseViewController.swift in Sources */,
 				FAA3D9A124CB509900A15221 /* Endpoints.swift in Sources */,
+				AD74344824E27B5D00CAB552 /* Badge.swift in Sources */,
 				FA002A8A24D7182F00735BC3 /* SettingViewController.swift in Sources */,
 				ADE77FC024D9768100BC3BEC /* FeedViewController.swift in Sources */,
 				FA24034024C19BFC00C4A40C /* ForgotPasswordViewController.swift in Sources */,

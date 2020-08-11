@@ -16,15 +16,15 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        slideshow.setImageInputs([
-            ImageSource(image: UIImage(named: "banner1")!),
-            ImageSource(image: UIImage(named: "banner2")!),
-            ImageSource(image: UIImage(named: "banner3")!),
-            ImageSource(image: UIImage(named: "banner4")!),
-            ImageSource(image: UIImage(named: "banner5")!)
-        ])
-        
-        slideshow.contentScaleMode = .scaleAspectFill
+//        slideshow.setImageInputs([
+//            ImageSource(image: UIImage(named: "banner1")!),
+//            ImageSource(image: UIImage(named: "banner2")!),
+//            ImageSource(image: UIImage(named: "banner3")!),
+//            ImageSource(image: UIImage(named: "banner4")!),
+//            ImageSource(image: UIImage(named: "banner5")!)
+//        ])
+//        
+//        slideshow.contentScaleMode = .scaleAspectFill
     }
 
 }

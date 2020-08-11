@@ -26,3 +26,9 @@ enum StoryboardID: String {
 enum StorageKey: String {
     case loginEmail = "loginEmail"
 }
+
+enum Color: String {
+    case mainBackground = "MainBackground"
+    case heading = "Heading"
+    case badgeBackground = "BadgeBackground"
+}

@@ -13,7 +13,7 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.init(named: "MainBackground")
+        self.view.backgroundColor = UIColor.init(named: Color.mainBackground.rawValue)
     }
     
 }
