@@ -14,6 +14,7 @@ enum AppEnv: String {
 
 enum StoryboardName: String {
     case main = "Main"
+    case mainTab = "MainTab"
 }
 
 enum StoryboardID: String {

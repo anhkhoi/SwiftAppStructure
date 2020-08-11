@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         if LoginPresenter.isLogging() {
             let homeView = Commons.initViewController(
-                StoryboardName.main.rawValue,
+                StoryboardName.mainTab.rawValue,
                 StoryboardID.mainTab.rawValue
             )
             window?.rootViewController = homeView

@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Settings-->
+        <!--Setting View Controller-->
         <scene sceneID="et7-Dq-JGF">
             <objects>
-                <viewController storyboardIdentifier="SettingViewController" id="BRc-RZ-Zbx" customClass="SettingViewController" customModule="SwiftAppStructure" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingViewController" id="BRc-RZ-Zbx" userLabel="Setting View Controller" customClass="SettingViewController" customModule="SwiftAppStructure" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i1E-0Q-LEl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,7 @@
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="xGP-3u-M5z" firstAttribute="leading" secondItem="AZ5-1U-6Wc" secondAttribute="leading" id="ZOz-au-DPs"/>
                             <constraint firstItem="xGP-3u-M5z" firstAttribute="top" secondItem="AZ5-1U-6Wc" secondAttribute="top" id="hi4-4y-MK7"/>

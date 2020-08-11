@@ -70,7 +70,7 @@ class LoginViewController: UITableViewController {
 
     private func openHomeView() {
         let homeView = Commons.initViewController(
-            StoryboardName.main.rawValue,
+            StoryboardName.mainTab.rawValue,
             StoryboardID.mainTab.rawValue
         )
         self.present(homeView, animated: true, completion: nil)

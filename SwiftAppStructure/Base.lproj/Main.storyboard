@@ -263,37 +263,5 @@
             </objects>
             <point key="canvasLocation" x="551" y="323"/>
         </scene>
-        <!--MainTabBarViewController-->
-        <scene sceneID="kkK-mP-NAP">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="MainTabBarViewController" storyboardName="MainTab" referencedIdentifier="MainTabBarViewController" id="Lye-dS-Ifg" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Pfj-eW-YXl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1486" y="366"/>
-        </scene>
-        <!--HomeViewController-->
-        <scene sceneID="xoE-kW-GU3">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="HomeViewController" storyboardName="Home" referencedIdentifier="HomeViewController" id="jPb-TR-uhc" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GJj-2A-vWx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1863" y="301"/>
-        </scene>
-        <!--FeedViewController-->
-        <scene sceneID="W65-ob-lta">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="FeedViewController" storyboardName="Feed" referencedIdentifier="FeedViewController" id="LhZ-gv-IQX" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uVc-qN-1ip" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1865" y="366"/>
-        </scene>
-        <!--SettingViewController-->
-        <scene sceneID="2dO-Ji-VTy">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="SettingViewController" storyboardName="Setting" referencedIdentifier="SettingViewController" id="mme-17-FP7" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xPX-k7-4pm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1874" y="435"/>
-        </scene>
     </scenes>
 </document>

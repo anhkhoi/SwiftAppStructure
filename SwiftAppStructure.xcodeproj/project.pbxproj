@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		AD68FA6C24DC6CFF00709569 /* ImageSlideshow in Frameworks */ = {isa = PBXBuildFile; productRef = AD68FA6B24DC6CFF00709569 /* ImageSlideshow */; };
+		AD74343824E2564500CAB552 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD74343724E2564500CAB552 /* SearchViewController.swift */; };
+		AD74343A24E2569A00CAB552 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD74343924E2569A00CAB552 /* Search.storyboard */; };
+		AD74343D24E2573700CAB552 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD74343C24E2573700CAB552 /* CartViewController.swift */; };
+		AD74343F24E2575D00CAB552 /* Cart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD74343E24E2575D00CAB552 /* Cart.storyboard */; };
+		AD74344224E2585900CAB552 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD74344124E2585900CAB552 /* ProfileViewController.swift */; };
+		AD74344424E2587A00CAB552 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD74344324E2587A00CAB552 /* Profile.storyboard */; };
 		ADA7B20224DC67050094AEE9 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA7B20124DC67050094AEE9 /* Home.storyboard */; };
 		ADA7B20424DC672C0094AEE9 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA7B20324DC672C0094AEE9 /* Feed.storyboard */; };
 		ADA7B20624DC67550094AEE9 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA7B20524DC67550094AEE9 /* Setting.storyboard */; };
@@ -59,6 +65,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD74343724E2564500CAB552 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		AD74343924E2569A00CAB552 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		AD74343C24E2573700CAB552 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		AD74343E24E2575D00CAB552 /* Cart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Cart.storyboard; sourceTree = "<group>"; };
+		AD74344124E2585900CAB552 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AD74344324E2587A00CAB552 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		ADA7B20124DC67050094AEE9 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		ADA7B20324DC672C0094AEE9 /* Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		ADA7B20524DC67550094AEE9 /* Setting.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
@@ -124,6 +136,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD74343624E2563500CAB552 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AD74343724E2564500CAB552 /* SearchViewController.swift */,
+				AD74343924E2569A00CAB552 /* Search.storyboard */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		AD74343B24E2572700CAB552 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				AD74343C24E2573700CAB552 /* CartViewController.swift */,
+				AD74343E24E2575D00CAB552 /* Cart.storyboard */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		AD74344024E2584D00CAB552 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AD74344124E2585900CAB552 /* ProfileViewController.swift */,
+				AD74344324E2587A00CAB552 /* Profile.storyboard */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		ADE77FBE24D9757500BC3BEC /* Feed */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +283,9 @@
 		FAD3168824BE1B5F007466BE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				AD74344024E2584D00CAB552 /* Profile */,
+				AD74343B24E2572700CAB552 /* Cart */,
+				AD74343624E2563500CAB552 /* Search */,
 				ADE77FBE24D9757500BC3BEC /* Feed */,
 				FA002A8824D7181C00735BC3 /* Setting */,
 				FAB966FE24CF50DD00CD584D /* MainTab */,
@@ -404,11 +446,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD3165C24BE18BF007466BE /* LaunchScreen.storyboard in Resources */,
+				AD74343F24E2575D00CAB552 /* Cart.storyboard in Resources */,
+				AD74344424E2587A00CAB552 /* Profile.storyboard in Resources */,
 				ADA7B20224DC67050094AEE9 /* Home.storyboard in Resources */,
 				ADA7B20624DC67550094AEE9 /* Setting.storyboard in Resources */,
 				ADA7B20424DC672C0094AEE9 /* Feed.storyboard in Resources */,
 				ADE77FC224D9775A00BC3BEC /* MainTab.storyboard in Resources */,
 				FAD3165924BE18BF007466BE /* Assets.xcassets in Resources */,
+				AD74343A24E2569A00CAB552 /* Search.storyboard in Resources */,
 				FAD3165424BE18BD007466BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,11 +482,13 @@
 				FAD3168D24BE1B92007466BE /* LoginPresenter.swift in Sources */,
 				FAD3165724BE18BD007466BE /* SwiftAppStructure.xcdatamodeld in Sources */,
 				FAD3164D24BE18BD007466BE /* AppDelegate.swift in Sources */,
+				AD74343824E2564500CAB552 /* SearchViewController.swift in Sources */,
 				FAD3168B24BE1B80007466BE /* LoginViewController.swift in Sources */,
 				FAA3D9A124CB509900A15221 /* Endpoints.swift in Sources */,
 				FA002A8A24D7182F00735BC3 /* SettingViewController.swift in Sources */,
 				ADE77FC024D9768100BC3BEC /* FeedViewController.swift in Sources */,
 				FA24034024C19BFC00C4A40C /* ForgotPasswordViewController.swift in Sources */,
+				AD74344224E2585900CAB552 /* ProfileViewController.swift in Sources */,
 				FA24034224C19D6000C4A40C /* ForgotPasswordPresenter.swift in Sources */,
 				FAB9670224CF510E00CD584D /* MainTabBarViewController.swift in Sources */,
 				FAD3169324BE1BE9007466BE /* Config.swift in Sources */,
@@ -449,6 +496,7 @@
 				FAB966FD24CF4B4A00CD584D /* Commons.swift in Sources */,
 				FAD3169024BE1BA6007466BE /* User.swift in Sources */,
 				FAA3D9A324CB52BD00A15221 /* LoginRequest.swift in Sources */,
+				AD74343D24E2573700CAB552 /* CartViewController.swift in Sources */,
 				FAA3D9A824CB58F000A15221 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

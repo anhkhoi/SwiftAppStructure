@@ -40,7 +40,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="1rd-U5-asQ" firstAttribute="leading" secondItem="fVQ-cz-VlB" secondAttribute="leading" id="1KA-NA-q7a"/>
                             <constraint firstItem="zd7-ea-J9d" firstAttribute="top" secondItem="fVQ-cz-VlB" secondAttribute="top" id="Axw-Ze-Dbe"/>
@@ -54,7 +54,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fVQ-cz-VlB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="Home" selectedImage="HomeSelected" id="hca-NK-1CY"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" selectedImage="HomeSelected" id="hca-NK-1CY">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="slideshow" destination="wVF-7w-qNt" id="vHI-C6-NVR"/>
                     </connections>
