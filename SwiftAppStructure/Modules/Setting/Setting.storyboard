@@ -40,7 +40,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AZ5-1U-6Wc"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="circle.grid.2x2" catalog="system" id="WVu-Gp-6Ef"/>
+                    <tabBarItem key="tabBarItem" title="More" image="More" selectedImage="MoreSelected" id="6Kp-v3-AUy"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KVz-4o-APD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -48,6 +49,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="circle.grid.2x2" catalog="system" width="128" height="112"/>
+        <image name="More" width="18" height="14"/>
+        <image name="MoreSelected" width="18" height="14"/>
     </resources>
 </document>

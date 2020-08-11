@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Cart View Controller-->
+        <!--Cart-->
         <scene sceneID="PQX-kt-eS9">
             <objects>
                 <viewController storyboardIdentifier="CartViewController" id="6lT-WG-76B" customClass="CartViewController" customModule="SwiftAppStructure" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Nl6-SP-xLq"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="Twy-r1-aKF"/>
+                    <tabBarItem key="tabBarItem" title="Cart" image="Cart" selectedImage="CartSelected" id="Twy-r1-aKF"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KhL-NI-vvP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -26,4 +26,8 @@
             <point key="canvasLocation" x="132" y="138"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Cart" width="19" height="19"/>
+        <image name="CartSelected" width="19" height="19"/>
+    </resources>
 </document>

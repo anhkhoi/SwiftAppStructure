@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Profile View Controller-->
+        <!--Profile-->
         <scene sceneID="dAP-Rz-7NS">
             <objects>
                 <viewController storyboardIdentifier="ProfileViewController" id="Usf-Tl-shp" customClass="ProfileViewController" customModule="SwiftAppStructure" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="VdU-5O-g8D"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="topRated" id="Ewe-68-klh"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="Profile" selectedImage="ProfileSelected" id="Ewe-68-klh"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K0i-DG-QSt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -26,4 +26,8 @@
             <point key="canvasLocation" x="-72" y="28"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Profile" width="19" height="19"/>
+        <image name="ProfileSelected" width="18" height="18"/>
+    </resources>
 </document>
