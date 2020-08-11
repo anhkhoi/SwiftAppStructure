@@ -1,5 +1,5 @@
 //
-//  CartViewController.swift
+//  BaseViewController.swift
 //  SwiftAppStructure
 //
 //  Created by Khoi Tran on 8/11/20.
@@ -8,9 +8,12 @@
 
 import UIKit
 
-class CartViewController: BaseViewController {
+class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor.init(named: "MainBackground")
     }
+    
 }

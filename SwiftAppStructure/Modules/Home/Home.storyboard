@@ -67,7 +67,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Home" width="29" height="28.5"/>
-        <image name="HomeSelected" width="29" height="28.5"/>
+        <image name="Home" width="20" height="19"/>
+        <image name="HomeSelected" width="20" height="19"/>
     </resources>
 </document>
